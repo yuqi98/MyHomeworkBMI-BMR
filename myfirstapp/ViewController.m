@@ -27,11 +27,7 @@
 
 
 
--(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"Touches began!");
-    //[self.myText resignFirstResponder];
-}
+
 
 
 bool q;
@@ -155,4 +151,14 @@ bool q;
     }
 
 }
+
+-(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Touches began!");
+    [self.Text1 resignFirstResponder];
+    [self.Text2 resignFirstResponder];
+    [self.TextAge resignFirstResponder];
+    
+}
+
 @end
